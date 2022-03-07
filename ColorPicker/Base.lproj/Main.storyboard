@@ -35,14 +35,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsC-Jr-ZL7">
-                                                <rect key="frame" x="55" y="0.0" width="11.333333333333329" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsC-Jr-ZL7" userLabel="Red Slider Value Label">
+                                                <rect key="frame" x="55" y="0.0" width="0.0" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5u5-hR-Lju">
-                                                <rect key="frame" x="69.333333333333343" y="0.0" width="314.66666666666663" height="31"/>
+                                                <rect key="frame" x="58" y="0.0" width="326" height="31"/>
+                                                <connections>
+                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="3Zz-Ma-Tl2"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -55,14 +58,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-GO-zJY">
-                                                <rect key="frame" x="55" y="0.0" width="11.333333333333329" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-GO-zJY" userLabel="Green Slider Value Label">
+                                                <rect key="frame" x="55" y="0.0" width="0.0" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xfI-CN-XSm">
-                                                <rect key="frame" x="69.333333333333343" y="0.0" width="314.66666666666663" height="31"/>
+                                                <rect key="frame" x="58" y="0.0" width="326" height="31"/>
+                                                <connections>
+                                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="B8P-19-uqL"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -75,14 +81,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAC-AH-0ac">
-                                                <rect key="frame" x="55" y="0.0" width="11.333333333333329" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAC-AH-0ac" userLabel="Blue Slider Value Label">
+                                                <rect key="frame" x="55" y="0.0" width="0.0" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jcz-Y7-TFh">
-                                                <rect key="frame" x="69.333333333333343" y="0.0" width="314.66666666666663" height="31"/>
+                                                <rect key="frame" x="58" y="0.0" width="326" height="31"/>
+                                                <connections>
+                                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="tbe-NV-k49"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -105,6 +114,18 @@
                             <constraint firstItem="J5e-lL-7Qc" firstAttribute="height" secondItem="I1w-FK-b8z" secondAttribute="height" multiplier="0.828125" id="pmV-o6-usz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="jcz-Y7-TFh" id="Cw5-Nx-5JH"/>
+                        <outlet property="blueSliderValueLabel" destination="RAC-AH-0ac" id="G5z-ix-8HR"/>
+                        <outlet property="blueTitleLabel" destination="ibU-wi-aT6" id="f8h-wk-DHr"/>
+                        <outlet property="colorView" destination="I1w-FK-b8z" id="BnF-hO-6He"/>
+                        <outlet property="greenSlider" destination="xfI-CN-XSm" id="I0j-pr-1Bn"/>
+                        <outlet property="greenSliderValueLabel" destination="ekF-GO-zJY" id="0Ce-Jv-Fdc"/>
+                        <outlet property="greenTitleLabel" destination="CCU-ZB-Q7i" id="Bya-Sc-6vn"/>
+                        <outlet property="redSlider" destination="5u5-hR-Lju" id="nUc-sn-zp7"/>
+                        <outlet property="redSliderValueLabel" destination="LsC-Jr-ZL7" id="UjB-um-Koa"/>
+                        <outlet property="redTitleLabel" destination="A6Y-2x-xg9" id="iLj-HC-Hpc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
