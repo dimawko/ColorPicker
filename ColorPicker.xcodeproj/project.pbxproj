@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C22CA15327D64A8600D0149E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CA15227D64A8600D0149E /* AppDelegate.swift */; };
 		C22CA15527D64A8600D0149E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CA15427D64A8600D0149E /* SceneDelegate.swift */; };
-		C22CA15727D64A8600D0149E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CA15627D64A8600D0149E /* ViewController.swift */; };
+		C22CA15727D64A8600D0149E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CA15627D64A8600D0149E /* SettingsViewController.swift */; };
 		C22CA15A27D64A8600D0149E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22CA15827D64A8600D0149E /* Main.storyboard */; };
 		C22CA15C27D64A8800D0149E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22CA15B27D64A8800D0149E /* Assets.xcassets */; };
 		C22CA15F27D64A8800D0149E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22CA15D27D64A8800D0149E /* LaunchScreen.storyboard */; };
+		C277538B27FD658C0051FDE5 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277538A27FD658C0051FDE5 /* ColorViewController.swift */; };
+		C277539127FD76390051FDE5 /* Extension + UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277539027FD76380051FDE5 /* Extension + UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C22CA14F27D64A8600D0149E /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22CA15227D64A8600D0149E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C22CA15427D64A8600D0149E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C22CA15627D64A8600D0149E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C22CA15627D64A8600D0149E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C22CA15927D64A8600D0149E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C22CA15B27D64A8800D0149E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22CA15E27D64A8800D0149E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C22CA16027D64A8800D0149E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C277538A27FD658C0051FDE5 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		C277539027FD76380051FDE5 /* Extension + UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITextField.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		C22CA15127D64A8600D0149E /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				C22CA15227D64A8600D0149E /* AppDelegate.swift */,
-				C22CA15427D64A8600D0149E /* SceneDelegate.swift */,
-				C22CA15627D64A8600D0149E /* ViewController.swift */,
-				C22CA15827D64A8600D0149E /* Main.storyboard */,
-				C22CA15B27D64A8800D0149E /* Assets.xcassets */,
-				C22CA15D27D64A8800D0149E /* LaunchScreen.storyboard */,
-				C22CA16027D64A8800D0149E /* Info.plist */,
+				C277538D27FD659A0051FDE5 /* ViewControllers */,
+				C277538E27FD65A20051FDE5 /* Storyboards */,
+				C277539227FD763D0051FDE5 /* Extensions */,
+				C277538C27FD65950051FDE5 /* App */,
+				C277538F27FD65AC0051FDE5 /* Resources */,
 			);
 			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		C277538C27FD65950051FDE5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C22CA15227D64A8600D0149E /* AppDelegate.swift */,
+				C22CA15427D64A8600D0149E /* SceneDelegate.swift */,
+				C22CA16027D64A8800D0149E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C277538D27FD659A0051FDE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C277538A27FD658C0051FDE5 /* ColorViewController.swift */,
+				C22CA15627D64A8600D0149E /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C277538E27FD65A20051FDE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C22CA15827D64A8600D0149E /* Main.storyboard */,
+				C22CA15D27D64A8800D0149E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C277538F27FD65AC0051FDE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C22CA15B27D64A8800D0149E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C277539227FD763D0051FDE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C277539027FD76380051FDE5 /* Extension + UITextField.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22CA15727D64A8600D0149E /* ViewController.swift in Sources */,
+				C22CA15727D64A8600D0149E /* SettingsViewController.swift in Sources */,
 				C22CA15327D64A8600D0149E /* AppDelegate.swift in Sources */,
+				C277538B27FD658C0051FDE5 /* ColorViewController.swift in Sources */,
 				C22CA15527D64A8600D0149E /* SceneDelegate.swift in Sources */,
+				C277539127FD76390051FDE5 /* Extension + UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25CKWY7LZ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorPicker/Info.plist;
+				INFOPLIST_FILE = ColorPicker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25CKWY7LZ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorPicker/Info.plist;
+				INFOPLIST_FILE = ColorPicker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
