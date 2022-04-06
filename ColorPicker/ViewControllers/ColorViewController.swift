@@ -12,16 +12,12 @@ class ColorViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let settingsVC = segue.destination as? SettingsViewController else { return }
         settingsVC.delegate = self
+        settingsVC.viewColor = view.backgroundColor
     }
 }
 
 extension ColorViewController: SettingsViewControllerDelegate {
-    func setNewColors(red: CGFloat, green: CGFloat, blue: CGFloat) {
-        view.backgroundColor = UIColor(
-            red: red,
-            green: green,
-            blue: blue,
-            alpha: 1
-        )
+    func setNewColors(_ color: UIColor) {
+        view.backgroundColor = color
     }
 }

@@ -80,22 +80,22 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-Yd-cCx" userLabel="Slider Stack View">
-                                        <rect key="frame" x="95" y="0.0" width="238" height="120"/>
+                                        <rect key="frame" x="95" y="0.0" width="233" height="120"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5u5-hR-Lju">
-                                                <rect key="frame" x="-2" y="0.0" width="242" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="237" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="lhd-25-Y5j"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xfI-CN-XSm">
-                                                <rect key="frame" x="-2" y="45" width="242" height="31"/>
+                                                <rect key="frame" x="-2" y="45" width="237" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="uvM-AM-FtO"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jcz-Y7-TFh">
-                                                <rect key="frame" x="-2" y="90" width="242" height="31"/>
+                                                <rect key="frame" x="-2" y="90" width="237" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="63T-ji-mJP"/>
                                                 </connections>
@@ -103,26 +103,26 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JYJ-NE-Gbh">
-                                        <rect key="frame" x="341" y="1" width="55" height="118"/>
+                                        <rect key="frame" x="336" y="1" width="60" height="118"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z13-8C-uTu" userLabel="Red Text Field">
-                                                <rect key="frame" x="0.0" y="0.0" width="55" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mbo-Xb-abc" userLabel="Green Text Field">
-                                                <rect key="frame" x="0.0" y="42" width="55" height="34"/>
+                                                <rect key="frame" x="0.0" y="42" width="60" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38c-Tc-GdN" userLabel="Blue Text Field">
-                                                <rect key="frame" x="0.0" y="84" width="55" height="34"/>
+                                                <rect key="frame" x="0.0" y="84" width="60" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="Y2i-we-YHg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Y2i-we-YHg"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
